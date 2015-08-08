@@ -1,0 +1,32 @@
+{
+  "name": "Waffle Iron",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Extension made to expand panels in waffle",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "contextMenus",
+    "*://waffle.io/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "*://waffle.io/*"
+    ],
+    "css": [
+      "src/inject/inject.css"
+    ]
+  }, {
+    "matches": [
+      "*://waffle.io/*"
+    ],
+    "js": [
+      "src/inject/inject.js"
+    ]
+  }]
+}

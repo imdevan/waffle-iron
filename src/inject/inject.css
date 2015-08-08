@@ -1,0 +1,40 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+
+._iron--button {
+    border-radius: 50%;
+    background: #777;
+    color: #fff;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: color 0.15s linear, background 0.15s linear;
+    -moz-transition: color 0.15s linear, background 0.15s linear;
+    -o-transition: color 0.15s linear, background 0.15s linear;
+    transition: color 0.15s linear, background 0.15s linear;
+}
+._iron--button:hover{
+	background: #8b8b8b;
+}
+._iron--button:focus{
+	background: #777;
+}
+.column-ct.ng-scope {
+    float: none !important;
+    position: relative;
+    -webkit-transition: width 0.3s cubic-bezier(.8, 0, .2, 1);
+    -moz-transition: width 0.3s cubic-bezier(.8, 0, .2, 1);
+    -o-transition: width 0.3s cubic-bezier(.8, 0, .2, 1);
+    transition: width 0.3s cubic-bezier(.8, 0, .2, 1);
+}
+._iron--panel-OPEN {
+    width: 50% !important;
+}
